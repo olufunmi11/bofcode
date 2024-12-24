@@ -1,0 +1,7 @@
+services:
+  bofcode_web:
+    build: .
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8080:80
